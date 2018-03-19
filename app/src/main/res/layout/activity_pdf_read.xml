@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Pdf_read">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/wallpaper2"
+        android:gravity="center">
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="File from storage"
+        android:id="@+id/bt"
+        android:background="@drawable/buttonstroke"
+        android:layout_below="@+id/bt1"
+        android:layout_centerHorizontal="true" />
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buttonstroke"
+        android:text="Stop"
+        android:id="@+id/bt1"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wallpaper"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/speaktv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
